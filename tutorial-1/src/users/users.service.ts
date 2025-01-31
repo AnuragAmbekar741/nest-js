@@ -77,6 +77,7 @@ export class UsersService {
     });
     return this.findOne(id);
   }
+  
 
   deleteUser(id: number) {
     const removedUser = this.findOne(id);
