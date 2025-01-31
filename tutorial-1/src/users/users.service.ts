@@ -69,7 +69,10 @@ export class UsersService {
     },
   ) {
     this.users.map((user) => {
-      if (user.id === id) return { ...user, ...updateUser };
+      if (user.id === id){
+        const updatedUser =  { ...user, ...updateUser };
+        return updatedUser
+    }
       return user;
     });
     return this.findOne(id);
