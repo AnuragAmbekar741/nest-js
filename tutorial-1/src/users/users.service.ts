@@ -71,7 +71,7 @@ export class UsersService {
     this.users.map((user) => {
       if (user.id === id){
         const updatedUser =  { ...user, ...updateUser };
-        return updatedUser
+        return updatedUser;
     }
       return user;
     });
